@@ -1,0 +1,163 @@
+*,:after,:before {
+	box-sizing:border-box;
+	/*margin:0;*/
+	padding:0;
+}
+
+body {
+	font: 1rem/1.5 -apple-system,BlinkMacSystemFont,"avenir next",avenir,helvetica,"helvetica neue",ubuntu,roboto,noto,"segoe ui",arial,sans-serif;
+	text-rendering:optimizeSpeed;
+}
+
+.posts hr {
+	margin-top: 0;
+    margin-bottom: 0;
+    margin-right: .5rem;
+    margin-left: .5rem;
+    height: 1px;
+    border: none;
+    border-bottom: 1px #353535;
+    flex: 1 0 1rem;
+    //opacity: .25;
+}
+
+
+main {
+	max-width: 70ch;
+	padding: 2ch;
+	margin: auto;
+}
+
+a, body {
+	color: #353535;
+}
+
+::selection, a:focus, a:hover {
+	background-color: #353535;
+	color: #fff;
+}
+
+.meta {
+	margin: 0 0 2.5rem;
+}
+
+.tags::before {
+	content: "\2022";
+	margin-left: 1rem;
+}
+
+code,pre {
+	color: #353535;
+	font-family: San Francisco Mono,Monaco,"Consolas","Lucida Console","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+	font-size: normal;
+	border: 1px solid #353535;
+    font-size: small;
+}
+
+code {
+	padding: .1rem;
+	border: none;
+}
+
+pre {
+	padding: .5rem;
+	overflow-x: auto;
+}
+
+pre code {
+	border: none;
+}
+
+img {
+	max-width:100%;
+	border: 1px solid #353535;
+}
+
+hr {
+	background: #353535;
+    height: 1px;
+    border: 0;
+}
+
+ul {
+	list-style-type: square;
+}
+
+ul, ol {
+	padding-left: 1.2rem; 
+}
+
+header li, footer li {
+    display: inline;
+    text-transform: uppercase;
+}
+
+header a, footer a {
+    text-decoration: none;
+}
+
+header ul, footer ul {
+    justify-content: space-between;
+    display: flex;
+}
+
+
+[aria-current="page"] {
+	//font-weight: bold;
+	text-decoration: line-through;
+}
+
+header,section, footer {
+	padding:1rem 0;
+}
+
+blockquote {
+    border-left: 5px solid #353535;
+    padding-left: 1rem;
+}
+.posts ul,header ul, footer ul {
+	list-style:none;
+}
+
+.posts, header ul, footer ul {
+	padding: 0;
+}
+
+.posts li {
+	align-items:center;
+	display:flex;
+	justify-content:space-between;
+    margin-bottom: .7rem;
+}
+
+.posts li a, .posts li div {
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	text-decoration: none;
+}
+
+.posts li time {
+	padding-left: 1rem;
+	white-space: nowrap;
+	font-variant-numeric: tabular-nums;
+}
+
+.hash {
+	opacity: .25;
+	text-decoration: none;
+}
+
+
+table {
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+}
+table tr {
+    background: white;
+    border-bottom: 1px solid
+}
+table th, table td {
+    padding: 10px 20px;
+}

@@ -1,0 +1,85 @@
+baseURL = "https://ronaldsvilcins.com/"
+languageCode = "en-us"
+title = "Ronalds Vilcins"
+disableKinds = ["section", "categories"]
+disqusShortname = ""
+pygmentsCodeFences = false
+pygmentsUseClasses = false
+paginate = 999
+minify = true
+
+
+[taxonomies]
+  tag = "tags"
+
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.instagram]
+    disable = true
+  [privacy.twitter]
+    disable = true
+  [privacy.vimeo]
+    disable = true
+  [privacy.youtube]
+    disable = true
+
+[Author]
+  name = ""
+
+[params]
+  description = ""
+  author = ""
+  copyright = ""
+  logo = ""
+
+[frontmatter]
+  date  = [":filename", ":default"]
+  author = "Ronalds Vilcins"
+  github = "https://github.com/ronv"
+  facebook = "https://facebook.com/ronalds.vilcins"
+  og_image = "/images/og.png"
+  sitename = "Ronalds Vilcins"
+  twitter = "@ronaldsvilcins"
+
+[permalinks]
+  posts = "/:year/:month/:day/:filename"
+  pages = "/:slug"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML"]
+
+[outputFormats.RSS]
+  mediatype = "application/rss"
+  baseName = "atom"
+
+[outputFormats.JSON]
+  mediatype = "application/json"
+  baseName = "feed"
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[menu]
+  [[menu.main]]
+    identifier = "index"
+    name       = "Index"
+    url        = "/"
+    weight     = -111
+
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about/"
+    weight     = -20
+
+  [[menu.main]]
+    identifier = "rss"
+    name       = "RSS"
+    url        = "/atom.xml"
+    weight     = -10

@@ -1,3 +1,7 @@
+---
+title: About
+---
+
 # Lines
 
 Lines is a minimalistic Hugo blogging theme.
@@ -9,7 +13,6 @@ Lines is a minimalistic Hugo blogging theme.
 - Inline CSS
 - Anchor headings
 - Tags
-- Security headers (for Netlify hosting)
 - 404 page
 - Compressed CSS and HTML
 - 100/100 score on Lighthouse, Page Speed Insights & Webpagetest
@@ -18,7 +21,3 @@ Lines is a minimalistic Hugo blogging theme.
 - Sass
 - Seo optimized (Twitter cards, Facebook Open Graph, Schema.org)
 - Ultra fast (Only ~2kb of CSS)
-
-### Screenshot
-
-![Screenshot](screenshot.png)

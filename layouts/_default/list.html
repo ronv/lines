@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  {{ partial "head.html" . }}
+<body>
+  <main>
+    {{ partial "header.html" . }}
+    <section>
+
+      <ul class="posts">
+        {{ range (.Paginate ( where .Site.RegularPages "Section" "posts" ).ByDate.Reverse).Pages }}
+          {{ if ne .Kind "section" }}
+          <li itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+            <a href="{{ .Permalink }}" title="{{ .Title }}" itemprop="name url">{{ .Title }}</a>
+            <hr>
+           <time datetime="{{ dateFormat "2006-01-02" .Date }}">{{ dateFormat "2006-01-02" .Date }}</time>
+          </li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </section>
+
+    {{ partial "footer.html" . }}
+  </main>
+</body>
+</html>
