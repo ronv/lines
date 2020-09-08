@@ -2,6 +2,8 @@
 
 Lines is a minimalistic Hugo blogging theme.
 
+### Demo: [https://lines-hugo-theme.netlify.app/](https://lines-hugo-theme.netlify.app/)
+
 ### Features
 
 - Minimalistic, clean and simple design

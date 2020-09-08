@@ -1,6 +1,6 @@
-baseURL = "https://ronaldsvilcins.com/"
+baseURL = "https://lines-hugo-theme.netlify.app/"
 languageCode = "en-us"
-title = "Ronalds Vilcins"
+title = "Lines - Minimalist Hugo theme"
 disableKinds = ["section", "categories"]
 disqusShortname = ""
 pygmentsCodeFences = false
@@ -37,12 +37,12 @@ minify = true
 
 [frontmatter]
   date  = [":filename", ":default"]
-  author = "Ronalds Vilcins"
-  github = "https://github.com/ronv"
-  facebook = "https://facebook.com/ronalds.vilcins"
-  og_image = "/images/og.png"
-  sitename = "Ronalds Vilcins"
-  twitter = "@ronaldsvilcins"
+  author = ""
+  github = ""
+  facebook = ""
+  og_image = ""
+  sitename = ""
+  twitter = ""
 
 [permalinks]
   posts = "/:year/:month/:day/:filename"
