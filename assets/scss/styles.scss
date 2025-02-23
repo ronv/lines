@@ -54,6 +54,11 @@ code,pre {
     font-size: small;
 }
 
+/* The snippet below changes syntax-highlighted text to white (#fff) instead of #353535 for better readability, as the original color blends too much with the background. */
+.highlight [class^="language-"] {
+	color: #fff;
+}
+
 code {
 	padding: .1rem;
 	border: none;
